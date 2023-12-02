@@ -1,0 +1,12 @@
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/bin/Debug/net7.0/MiniHbys.Utilities.deps.json
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/bin/Debug/net7.0/MiniHbys.Utilities.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/bin/Debug/net7.0/MiniHbys.Utilities.pdb
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.csproj.AssemblyReference.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.AssemblyInfoInputs.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.AssemblyInfo.cs
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.csproj.CoreCompileInputs.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/refint/MiniHbys.Utilities.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/MiniHbys.Utilities.pdb
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Utilities/obj/Debug/net7.0/ref/MiniHbys.Utilities.dll

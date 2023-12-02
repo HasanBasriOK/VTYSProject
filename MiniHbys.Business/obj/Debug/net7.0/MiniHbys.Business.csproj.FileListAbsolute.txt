@@ -1,0 +1,12 @@
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/bin/Debug/net7.0/MiniHbys.Business.deps.json
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/bin/Debug/net7.0/MiniHbys.Business.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/bin/Debug/net7.0/MiniHbys.Business.pdb
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/obj/Debug/net7.0/MiniHbys.Business.csproj.AssemblyReference.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/obj/Debug/net7.0/MiniHbys.Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/obj/Debug/net7.0/MiniHbys.Business.AssemblyInfoInputs.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/obj/Debug/net7.0/MiniHbys.Business.AssemblyInfo.cs
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/obj/Debug/net7.0/MiniHbys.Business.csproj.CoreCompileInputs.cache
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/obj/Debug/net7.0/MiniHbys.Business.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/obj/Debug/net7.0/refint/MiniHbys.Business.dll
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/obj/Debug/net7.0/MiniHbys.Business.pdb
+/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/obj/Debug/net7.0/ref/MiniHbys.Business.dll
