@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MiniHbys.DataAccess\MiniHbys.DataAccess.csproj" />
+      <ProjectReference Include="..\MiniHbys.Entity\MiniHbys.Entity.csproj" />
+    </ItemGroup>
+
 </Project>

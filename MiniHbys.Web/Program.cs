@@ -1,3 +1,7 @@
+using MiniHbys.Business.Abstraction;
+using MiniHbys.Business.Services;
+using MiniHbys.DataAccess.Abstraction;
+using MiniHbys.DataAccess.Managers;
 using MiniHbys.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +25,8 @@ GlobalSettings.ConnectionString = configuration.GetSection("ConnectionString").V
 
 #region IOC
 
-//services.AddSingleton<>();
+services.AddTransient<IUserService, UserService>();
+services.AddTransient<IUserManager, UserManager>();
 
 #endregion
 
