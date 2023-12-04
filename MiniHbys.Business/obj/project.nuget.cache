@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "li4t4hFIWz1w514sCISAj+3dHuPhatiiOH+Eh7jkAGkEB4wPBKgjhOATBzw6J68Lk62QmY+wxYkxUXzcOGy1Dw==",
+  "dgSpecHash": "XZnjGCvgR/cWwGVUPRGEXFB5ZE8BxqIXt4cyTIeMrHLMcCoZrlBSkbAUvyUqUfS1ofR94tR1Ha241URAv1knRA==",
   "success": true,
-  "projectFilePath": "/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Business/MiniHbys.Business.csproj",
+  "projectFilePath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/MiniHbys.Business.csproj",
   "expectedPackageFiles": [
     "/Users/hasanok/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/hasanok/.nuget/packages/azure.identity/1.8.0/azure.identity.1.8.0.nupkg.sha512",

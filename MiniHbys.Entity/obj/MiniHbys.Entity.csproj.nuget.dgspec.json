@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Entity/MiniHbys.Entity.csproj": {}
+    "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj": {}
   },
   "projects": {
-    "/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Entity/MiniHbys.Entity.csproj": {
+    "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Entity/MiniHbys.Entity.csproj",
+        "projectUniqueName": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj",
         "projectName": "MiniHbys.Entity",
-        "projectPath": "/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Entity/MiniHbys.Entity.csproj",
+        "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj",
         "packagesPath": "/Users/hasanok/.nuget/packages/",
-        "outputPath": "/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.Entity/obj/",
+        "outputPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hasanok/.nuget/NuGet/NuGet.Config"

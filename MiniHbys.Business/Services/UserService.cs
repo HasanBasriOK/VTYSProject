@@ -18,7 +18,13 @@ public class UserService : IUserService
     {
         var encryptedPassword = EncyptionHelper.Encrypt(user.Password, AppConstants.EncryptionKey);
         user.Password = encryptedPassword;
-        
        _userManager.CreateUser(user);
+    }
+
+    public User Login(string email, string password)
+    {
+        var encryptedPassword = EncyptionHelper.Encrypt(password, AppConstants.EncryptionKey);
+        var user = _userManager.Login(email, password);
+        return user;
     }
 }
