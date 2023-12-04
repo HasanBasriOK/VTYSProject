@@ -14,4 +14,9 @@
       <ProjectReference Include="..\MiniHbys.Utilities\MiniHbys.Utilities.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Pages" />
+      <Folder Include="wwwroot\adminLteSrc" />
+    </ItemGroup>
+
 </Project>

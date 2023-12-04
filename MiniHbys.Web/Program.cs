@@ -9,6 +9,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+#region IOC
+
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IUserManager, UserManager>();
+
+#endregion
+
 var app = builder.Build();
 var services = builder.Services;
 var configuration = app.Configuration;
@@ -23,12 +30,7 @@ if (!app.Environment.IsDevelopment())
 
 GlobalSettings.ConnectionString = configuration.GetSection("ConnectionString").Value ?? string.Empty;
 
-#region IOC
 
-services.AddTransient<IUserService, UserService>();
-services.AddTransient<IUserManager, UserManager>();
-
-#endregion
 
 
 

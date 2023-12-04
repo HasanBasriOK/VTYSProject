@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gG2RtFEt18ihc3KT5TLfPMHyWQXd6N2Q0AUt3yjbfAco+0+jRz8WDzl7Aji+Dbpr0E1o/fOtB9zQSn2XF4OupA==",
+  "dgSpecHash": "ZgOvAE2gyV2nWliB+HFTRwEcv2M1SPFbrBKJvTTcbsydgl2JB5yIIuTiK8C+DuSDaPmCL44GtNKvMWH0Uprtiw==",
   "success": true,
-  "projectFilePath": "/Users/hasanok/RiderProjects/MiniHbys/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj",
+  "projectFilePath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj",
   "expectedPackageFiles": [
     "/Users/hasanok/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/hasanok/.nuget/packages/azure.identity/1.8.0/azure.identity.1.8.0.nupkg.sha512",
