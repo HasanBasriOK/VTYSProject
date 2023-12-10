@@ -13,6 +13,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IUserManager, UserManager>();
+builder.Services.AddTransient<IPatientService, PatientService>();
+builder.Services.AddTransient<IPatientManager, PatientManager>();
 
 #endregion
 
@@ -29,10 +31,6 @@ if (!app.Environment.IsDevelopment())
 }
 
 GlobalSettings.ConnectionString = configuration.GetSection("ConnectionString").Value ?? string.Empty;
-
-
-
-
 
 
 app.UseHttpsRedirection();

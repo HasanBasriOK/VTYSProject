@@ -2132,35 +2132,37 @@
     ]
   },
   "packageFolders": {
-    "/Users/hasanok/.nuget/packages/": {}
+    "C:\\Users\\muazc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/MiniHbys.Business.csproj",
+      "projectUniqueName": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Business\\MiniHbys.Business.csproj",
       "projectName": "MiniHbys.Business",
-      "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/MiniHbys.Business.csproj",
-      "packagesPath": "/Users/hasanok/.nuget/packages/",
-      "outputPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/obj/",
+      "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Business\\MiniHbys.Business.csproj",
+      "packagesPath": "C:\\Users\\muazc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/hasanok/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\muazc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj": {
-              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj"
+            "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj"
             },
-            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj": {
-              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj"
+            "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj": {
+              "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj"
             }
           }
         }
@@ -2190,7 +2192,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

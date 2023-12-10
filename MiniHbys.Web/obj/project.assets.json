@@ -46,6 +46,19 @@
           }
         }
       },
+      "JetBrains.Annotations/2022.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -736,6 +749,33 @@
           }
         }
       },
+      "X.PagedList/8.4.7": {
+        "type": "package",
+        "dependencies": {
+          "JetBrains.Annotations": "2022.3.1"
+        },
+        "compile": {
+          "lib/net7.0/X.PagedList.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/X.PagedList.dll": {}
+        }
+      },
+      "X.PagedList.Mvc.Core/8.4.7": {
+        "type": "package",
+        "dependencies": {
+          "X.PagedList": "8.4.7"
+        },
+        "compile": {
+          "lib/net7.0/X.PagedList.Mvc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/X.PagedList.Mvc.Core.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "MiniHbys.Business/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -824,6 +864,28 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "JetBrains.Annotations/2022.3.1": {
+      "sha512": "11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
+      "type": "package",
+      "path": "jetbrains.annotations/2022.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "jetbrains.annotations.2022.3.1.nupkg.sha512",
+        "jetbrains.annotations.nuspec",
+        "lib/net20/JetBrains.Annotations.dll",
+        "lib/net20/JetBrains.Annotations.xml",
+        "lib/netstandard1.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard1.0/JetBrains.Annotations.dll",
+        "lib/netstandard1.0/JetBrains.Annotations.xml",
+        "lib/netstandard2.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard2.0/JetBrains.Annotations.dll",
+        "lib/netstandard2.0/JetBrains.Annotations.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2123,6 +2185,34 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "X.PagedList/8.4.7": {
+      "sha512": "ZA1WcyNviMUhivCgwKAm/5/YsNP3Yf/n81SzrPaHSJOcFzavA9MrXTT8M+ZX4fvHwLCL1bY6BPXvwZF5pRtgTg==",
+      "type": "package",
+      "path": "x.pagedlist/8.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/X.PagedList.dll",
+        "lib/net7.0/X.PagedList.dll",
+        "lib/netstandard2.0/X.PagedList.dll",
+        "lib/netstandard2.1/X.PagedList.dll",
+        "x.pagedlist.8.4.7.nupkg.sha512",
+        "x.pagedlist.nuspec"
+      ]
+    },
+    "X.PagedList.Mvc.Core/8.4.7": {
+      "sha512": "dS8sJr/aT3AoV9ePaqmF4wijh/2vqS9rxpOvzjPPStkQcR8rUaGPVezPgY/kJwWCZ2hdgKNralbU08So0otNxw==",
+      "type": "package",
+      "path": "x.pagedlist.mvc.core/8.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/X.PagedList.Mvc.Core.dll",
+        "lib/net7.0/X.PagedList.Mvc.Core.dll",
+        "x.pagedlist.mvc.core.8.4.7.nupkg.sha512",
+        "x.pagedlist.mvc.core.nuspec"
+      ]
+    },
     "MiniHbys.Business/1.0.0": {
       "type": "project",
       "path": "../MiniHbys.Business/MiniHbys.Business.csproj",
@@ -2149,46 +2239,48 @@
       "MiniHbys.Business >= 1.0.0",
       "MiniHbys.DataAccess >= 1.0.0",
       "MiniHbys.Entity >= 1.0.0",
-      "MiniHbys.Utilities >= 1.0.0"
+      "MiniHbys.Utilities >= 1.0.0",
+      "X.PagedList.Mvc.Core >= 8.4.7"
     ]
   },
   "packageFolders": {
-    "/Users/hasanok/.nuget/packages/": {}
+    "C:\\Users\\muazc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/MiniHbys.Web.csproj",
+      "projectUniqueName": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Web\\MiniHbys.Web.csproj",
       "projectName": "MiniHbys.Web",
-      "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/MiniHbys.Web.csproj",
-      "packagesPath": "/Users/hasanok/.nuget/packages/",
-      "outputPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/obj/",
+      "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Web\\MiniHbys.Web.csproj",
+      "packagesPath": "C:\\Users\\muazc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/hasanok/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\muazc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/MiniHbys.Business.csproj": {
-              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/MiniHbys.Business.csproj"
+            "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Business\\MiniHbys.Business.csproj": {
+              "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Business\\MiniHbys.Business.csproj"
             },
-            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj": {
-              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj"
+            "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj"
             },
-            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj": {
-              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj"
+            "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj": {
+              "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj"
             },
-            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/MiniHbys.Utilities.csproj": {
-              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/MiniHbys.Utilities.csproj"
+            "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Utilities\\MiniHbys.Utilities.csproj": {
+              "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Utilities\\MiniHbys.Utilities.csproj"
             }
           }
         }
@@ -2202,6 +2294,12 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "X.PagedList.Mvc.Core": {
+            "target": "Package",
+            "version": "[8.4.7, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -2221,7 +2319,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

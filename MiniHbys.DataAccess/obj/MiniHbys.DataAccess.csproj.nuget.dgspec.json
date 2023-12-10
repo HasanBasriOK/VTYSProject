@@ -1,36 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj": {}
+    "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj": {}
   },
   "projects": {
-    "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj": {
+    "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj",
         "projectName": "MiniHbys.DataAccess",
-        "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj",
-        "packagesPath": "/Users/hasanok/.nuget/packages/",
-        "outputPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/",
+        "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\muazc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/hasanok/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\muazc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj": {
-                "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj"
+              "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj": {
+                "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj"
               },
-              "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/MiniHbys.Utilities.csproj": {
-                "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/MiniHbys.Utilities.csproj"
+              "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Utilities\\MiniHbys.Utilities.csproj": {
+                "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Utilities\\MiniHbys.Utilities.csproj"
               }
             }
           }
@@ -66,26 +68,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj": {
+    "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj",
         "projectName": "MiniHbys.Entity",
-        "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj",
-        "packagesPath": "/Users/hasanok/.nuget/packages/",
-        "outputPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/obj/",
+        "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj",
+        "packagesPath": "C:\\Users\\muazc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/hasanok/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\muazc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -119,26 +123,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/MiniHbys.Utilities.csproj": {
+    "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Utilities\\MiniHbys.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/MiniHbys.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Utilities\\MiniHbys.Utilities.csproj",
         "projectName": "MiniHbys.Utilities",
-        "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/MiniHbys.Utilities.csproj",
-        "packagesPath": "/Users/hasanok/.nuget/packages/",
-        "outputPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Utilities/obj/",
+        "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Utilities\\MiniHbys.Utilities.csproj",
+        "packagesPath": "C:\\Users\\muazc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/hasanok/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\muazc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -172,7 +178,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
