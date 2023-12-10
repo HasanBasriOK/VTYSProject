@@ -27,3 +27,20 @@
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/refint/MiniHbys.DataAccess.dll
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/MiniHbys.DataAccess.pdb
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/obj/Debug/net7.0/ref/MiniHbys.DataAccess.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.DataAccess.deps.json
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.DataAccess.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.DataAccess.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Entity.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Utilities.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Entity.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\bin\Debug\net7.0\MiniHbys.Utilities.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.csproj.AssemblyReference.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.AssemblyInfoInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.AssemblyInfo.cs
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.csproj.CopyComplete
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\refint\MiniHbys.DataAccess.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\MiniHbys.DataAccess.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.DataAccess\obj\Debug\net7.0\ref\MiniHbys.DataAccess.dll

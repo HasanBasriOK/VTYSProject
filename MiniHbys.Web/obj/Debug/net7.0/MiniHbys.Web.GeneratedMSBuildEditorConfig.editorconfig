@@ -9,45 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MiniHbys.Web
 build_property.RootNamespace = MiniHbys.Web
-build_property.ProjectDir = /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/
+build_property.ProjectDir = C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web
+build_property.MSBuildProjectDirectory = C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/Patient/CreatePatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxDcmVhdGVQYXRpZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/Patient/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/User/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Mb2dpbi5jc2h0bWw=
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/Patient/ListPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxMaXN0UGF0aWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/User/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9SZWdpc3Rlci5jc2h0bWw=
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/Patient/UpdatePatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxVcGRhdGVQYXRpZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-51j1cg8uod
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/muazc/OneDrive/Masaüstü/C\# Dersleri/VTYSProject/MiniHbys.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9j97wk68pi

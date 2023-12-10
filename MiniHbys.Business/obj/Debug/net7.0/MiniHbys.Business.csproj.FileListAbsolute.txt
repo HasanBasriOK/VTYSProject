@@ -29,3 +29,22 @@
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/obj/Debug/net7.0/refint/MiniHbys.Business.dll
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/obj/Debug/net7.0/MiniHbys.Business.pdb
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/obj/Debug/net7.0/ref/MiniHbys.Business.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\bin\Debug\net7.0\MiniHbys.Business.deps.json
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\bin\Debug\net7.0\MiniHbys.Business.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\bin\Debug\net7.0\MiniHbys.Business.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\bin\Debug\net7.0\MiniHbys.DataAccess.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\bin\Debug\net7.0\MiniHbys.Entity.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\bin\Debug\net7.0\MiniHbys.Utilities.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\bin\Debug\net7.0\MiniHbys.DataAccess.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\bin\Debug\net7.0\MiniHbys.Entity.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\bin\Debug\net7.0\MiniHbys.Utilities.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\MiniHbys.Business.csproj.AssemblyReference.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\MiniHbys.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\MiniHbys.Business.AssemblyInfoInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\MiniHbys.Business.AssemblyInfo.cs
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\MiniHbys.Business.csproj.CoreCompileInputs.cache
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\MiniHbys.Business.csproj.CopyComplete
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\MiniHbys.Business.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\refint\MiniHbys.Business.dll
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\MiniHbys.Business.pdb
+C:\Users\muazc\OneDrive\Masaüstü\C# Dersleri\VTYSProject\MiniHbys.Business\obj\Debug\net7.0\ref\MiniHbys.Business.dll
