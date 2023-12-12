@@ -27,4 +27,15 @@ public class UserService : IUserService
         var user = _userManager.Login(email, password);
         return user;
     }
+
+    public bool IsUserExist(string email)
+    {
+        return _userManager.IsUserExist(email);
+    }
+
+    public void UpdateUser(User user)
+    {
+        var encryptedPassword = EncyptionHelper.Encrypt(user.Password, AppConstants.EncryptionKey);
+    }
+
 }

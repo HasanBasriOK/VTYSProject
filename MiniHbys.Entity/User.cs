@@ -8,5 +8,5 @@ public class User
     public string UserName { get; set; }
     public string UserSurname { get; set; }
     public DateTime? BirthDate { get; set; }
-    public int RoleId { get; set; }
+    public int RoleID { get; set; }
 }

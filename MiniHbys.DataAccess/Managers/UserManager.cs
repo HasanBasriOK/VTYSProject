@@ -9,12 +9,11 @@ public class UserManager : IUserManager
 {
     public void CreateUser(User user)
     {
-        //ADO.NET
         using(var connection = new SqlConnection(GlobalSettings.ConnectionString))
         {
             connection.Open();
-            var commandText = @"INSERT INTO User (UserEmail,Password,UserName,UserSurname,BirthDate,RoleId) VALUES
-        (@UserEmail,@Password,@UserName,@UserSurname,@BirthDate,@RoleId)";
+            var commandText = @"INSERT INTO User (UserEmail,Password,UserName,UserSurname,BirthDate,RoleID) VALUES
+        (@UserEmail,@Password,@UserName,@UserSurname,@BirthDate,@RoleID)";
             using (var command = new SqlCommand(commandText, connection))
             {
                 command.Parameters.AddWithValue("@UserEmail", user.UserEmail);
@@ -22,7 +21,7 @@ public class UserManager : IUserManager
                 command.Parameters.AddWithValue("@UserName", user.UserName);
                 command.Parameters.AddWithValue("@UserSurname", user.UserSurname);
                 command.Parameters.AddWithValue("@BirthDate", user.BirthDate);
-                command.Parameters.AddWithValue("@RoleId", user.RoleId);
+                command.Parameters.AddWithValue("@RoleID", user.RoleID);
 
                 command.ExecuteNonQuery();
             }
@@ -55,12 +54,58 @@ public class UserManager : IUserManager
                     user.UserEmail = reader["UserEmail"] != DBNull.Value
                         ? reader["UserEmail"].ToString()
                         : string.Empty;
-                    user.RoleId = reader["RoleId"] != DBNull.Value ? reader["RoleId"].ToInt32() : default;
+                    user.RoleID = reader["RoleID"] != DBNull.Value ? reader["RoleID"].ToInt32() : default;
                     user.BirthDate = reader["Birthdate"] != DBNull.Value ? reader["Birthdate"].ToDateTime() : null;
                     user.Password = reader["Password"] != DBNull.Value ? reader["Password"].ToString() : string.Empty;
                 }
             }
         }
         return user;
+    }
+
+    public bool IsUserExist(string email)
+    {
+        using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
+        {
+            connection.Open();
+            var commandText = @"SELECT * FROM User WHERE Email = @Username";
+            using (var command=new SqlCommand(commandText,connection))
+            {
+                command.Parameters.AddWithValue("@UserEmail", email);
+                var reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                    return true;
+            }
+        }
+        return false;
+    }
+
+    public void UpdateUser(User user)
+    {
+        using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
+        {
+            connection.Open();
+            var commandText = @"UPDATE User SET 
+                UserEmail = @UserEmail,
+                Password  = @Password,
+                UserName  = @UserName,
+                UserSurname = @UserSurname,
+                BirthDate = @BirthDate,
+                RoleID = @RoleID
+                WHERE UserID = @UserID";
+            using (var command= new SqlCommand(commandText,connection))
+            {
+                command.Parameters.AddWithValue("@UserID", user.UserID);
+                command.Parameters.AddWithValue("@UserEmail", user.UserEmail);
+                command.Parameters.AddWithValue("@Password", user.Password);
+                command.Parameters.AddWithValue("@UserName", user.UserName);
+                command.Parameters.AddWithValue("@UserSurname", user.UserSurname);
+                command.Parameters.AddWithValue("@BirthDate", user.BirthDate);
+                command.Parameters.AddWithValue("@RoleId", user.RoleID);
+
+                command.ExecuteNonQuery();
+            }
+        }
     }
 }
