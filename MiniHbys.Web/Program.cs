@@ -13,6 +13,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IUserManager, UserManager>();
+builder.Services.AddTransient<IDepartmentManager, DepartmentManager>();
+builder.Services.AddTransient<IDepartmentService, DepartmentService>();
 
 #endregion
 

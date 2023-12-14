@@ -110,3 +110,5 @@
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/obj/Debug/net7.0/MiniHbys.Web.pdb
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/obj/Debug/net7.0/MiniHbys.Web.genruntimeconfig.cache
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/obj/Debug/net7.0/ref/MiniHbys.Web.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/bin/Debug/net7.0/MiniHbys.Common.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/bin/Debug/net7.0/MiniHbys.Common.pdb

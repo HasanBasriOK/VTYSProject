@@ -9,6 +9,7 @@
       "MiniHbys.Web/1.0.0": {
         "dependencies": {
           "MiniHbys.Business": "1.0.0",
+          "MiniHbys.Common": "1.0.0",
           "MiniHbys.DataAccess": "1.0.0",
           "MiniHbys.Entity": "1.0.0",
           "MiniHbys.Utilities": "1.0.0"
@@ -416,11 +417,17 @@
       },
       "MiniHbys.Business/1.0.0": {
         "dependencies": {
+          "MiniHbys.Common": "1.0.0",
           "MiniHbys.DataAccess": "1.0.0",
           "MiniHbys.Entity": "1.0.0"
         },
         "runtime": {
           "MiniHbys.Business.dll": {}
+        }
+      },
+      "MiniHbys.Common/1.0.0": {
+        "runtime": {
+          "MiniHbys.Common.dll": {}
         }
       },
       "MiniHbys.DataAccess/1.0.0": {
@@ -739,6 +746,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "MiniHbys.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MiniHbys.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

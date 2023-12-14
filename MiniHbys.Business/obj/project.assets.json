@@ -736,6 +736,16 @@
           }
         }
       },
+      "MiniHbys.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MiniHbys.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniHbys.Common.dll": {}
+        }
+      },
       "MiniHbys.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2109,6 +2119,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "MiniHbys.Common/1.0.0": {
+      "type": "project",
+      "path": "../MiniHbys.Common/MiniHbys.Common.csproj",
+      "msbuildProject": "../MiniHbys.Common/MiniHbys.Common.csproj"
+    },
     "MiniHbys.DataAccess/1.0.0": {
       "type": "project",
       "path": "../MiniHbys.DataAccess/MiniHbys.DataAccess.csproj",
@@ -2127,6 +2142,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "MiniHbys.Common >= 1.0.0",
       "MiniHbys.DataAccess >= 1.0.0",
       "MiniHbys.Entity >= 1.0.0"
     ]
@@ -2156,6 +2172,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Common/MiniHbys.Common.csproj": {
+              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Common/MiniHbys.Common.csproj"
+            },
             "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj": {
               "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj"
             },

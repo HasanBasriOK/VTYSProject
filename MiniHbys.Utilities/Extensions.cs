@@ -29,4 +29,12 @@ public static class Extensions
 
         return result;
     }
+
+    public static bool ToBoolean(this object obj)
+    {
+        var result = false;
+        if(obj != null)
+            bool.TryParse(obj.ToString(), out result);
+        return result;
+    }
 }

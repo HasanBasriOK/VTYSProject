@@ -29,3 +29,5 @@
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/obj/Debug/net7.0/refint/MiniHbys.Business.dll
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/obj/Debug/net7.0/MiniHbys.Business.pdb
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/obj/Debug/net7.0/ref/MiniHbys.Business.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/bin/Debug/net7.0/MiniHbys.Common.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/bin/Debug/net7.0/MiniHbys.Common.pdb

@@ -1,4 +1,4 @@
-namespace MiniHbys.Web.Models;
+namespace MiniHbys.Common.WebViewModels;
 
 public class LoginViewModel
 {
