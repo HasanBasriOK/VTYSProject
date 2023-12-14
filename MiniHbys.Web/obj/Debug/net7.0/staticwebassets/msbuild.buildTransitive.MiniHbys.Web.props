@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/MiniHbys.Web.props" />
+  <Import Project="..\buildMultiTargeting\MiniHbys.Web.props" />
 </Project>
