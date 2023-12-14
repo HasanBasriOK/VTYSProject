@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHbys.Business", "MiniHb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHbys.Utilities", "MiniHbys.Utilities\MiniHbys.Utilities.csproj", "{754EABE8-2251-457F-9499-C5DC70F24AFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHbys.Common", "MiniHbys.Common\MiniHbys.Common.csproj", "{4CAD6F48-20FD-44C8-9A1A-6DB89B103F90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{754EABE8-2251-457F-9499-C5DC70F24AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{754EABE8-2251-457F-9499-C5DC70F24AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{754EABE8-2251-457F-9499-C5DC70F24AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CAD6F48-20FD-44C8-9A1A-6DB89B103F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CAD6F48-20FD-44C8-9A1A-6DB89B103F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CAD6F48-20FD-44C8-9A1A-6DB89B103F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CAD6F48-20FD-44C8-9A1A-6DB89B103F90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "MiniHbys.Business/1.0.0": {
         "dependencies": {
+          "MiniHbys.Common": "1.0.0",
           "MiniHbys.DataAccess": "1.0.0",
           "MiniHbys.Entity": "1.0.0"
         },
@@ -412,6 +413,11 @@
           }
         }
       },
+      "MiniHbys.Common/1.0.0": {
+        "runtime": {
+          "MiniHbys.Common.dll": {}
+        }
+      },
       "MiniHbys.DataAccess/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.0-preview3.23201.1",
@@ -726,6 +732,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "MiniHbys.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MiniHbys.DataAccess/1.0.0": {
       "type": "project",

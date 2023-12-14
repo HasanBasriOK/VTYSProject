@@ -736,6 +736,16 @@
           }
         }
       },
+      "MiniHbys.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MiniHbys.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniHbys.Common.dll": {}
+        }
+      },
       "MiniHbys.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2109,6 +2119,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "MiniHbys.Common/1.0.0": {
+      "type": "project",
+      "path": "../MiniHbys.Common/MiniHbys.Common.csproj",
+      "msbuildProject": "../MiniHbys.Common/MiniHbys.Common.csproj"
+    },
     "MiniHbys.DataAccess/1.0.0": {
       "type": "project",
       "path": "../MiniHbys.DataAccess/MiniHbys.DataAccess.csproj",
@@ -2127,42 +2142,44 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "MiniHbys.Common >= 1.0.0",
       "MiniHbys.DataAccess >= 1.0.0",
       "MiniHbys.Entity >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\muazc\\.nuget\\packages\\": {}
+    "/Users/hasanok/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Business\\MiniHbys.Business.csproj",
+      "projectUniqueName": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/MiniHbys.Business.csproj",
       "projectName": "MiniHbys.Business",
-      "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Business\\MiniHbys.Business.csproj",
-      "packagesPath": "C:\\Users\\muazc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Business\\obj\\",
+      "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/MiniHbys.Business.csproj",
+      "packagesPath": "/Users/hasanok/.nuget/packages/",
+      "outputPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Business/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\muazc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/hasanok/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.DataAccess\\MiniHbys.DataAccess.csproj"
+            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Common/MiniHbys.Common.csproj": {
+              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Common/MiniHbys.Common.csproj"
             },
-            "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj": {
-              "projectPath": "C:\\Users\\muazc\\OneDrive\\Masaüstü\\C# Dersleri\\VTYSProject\\MiniHbys.Entity\\MiniHbys.Entity.csproj"
+            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj": {
+              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.DataAccess/MiniHbys.DataAccess.csproj"
+            },
+            "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj": {
+              "projectPath": "/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Entity/MiniHbys.Entity.csproj"
             }
           }
         }
@@ -2192,7 +2209,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
       }
     }
   }

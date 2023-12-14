@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\MiniHbys.Common\MiniHbys.Common.csproj" />
       <ProjectReference Include="..\MiniHbys.DataAccess\MiniHbys.DataAccess.csproj" />
       <ProjectReference Include="..\MiniHbys.Entity\MiniHbys.Entity.csproj" />
     </ItemGroup>
