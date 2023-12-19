@@ -15,6 +15,14 @@ builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IUserManager, UserManager>();
 builder.Services.AddTransient<IDepartmentManager, DepartmentManager>();
 builder.Services.AddTransient<IDepartmentService, DepartmentService>();
+builder.Services.AddTransient<IDoctorManager, DoctorManager>();
+builder.Services.AddTransient<IDoctorService, DoctorService>();
+builder.Services.AddTransient<IPatientManager, PatientManager>();
+builder.Services.AddTransient<IPatientService, PatientService>();
+builder.Services.AddTransient<IRoleManager, RoleManager>();
+builder.Services.AddTransient<IRoleService, RoleService>();
+builder.Services.AddTransient<IInspectionManager, InspectionManager>();
+builder.Services.AddTransient<IInspectionService, InspectionService>();
 
 #endregion
 

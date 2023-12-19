@@ -1,0 +1,77 @@
+@model MiniHbys.Entity.Role
+
+@{
+    ViewBag.Title = "Edit Role";
+    Layout = "_Layout";
+}
+
+
+@using (Html.BeginForm(actionName: "Edit", controllerName: "Role", routeValues: null, method: FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.RoleID)
+    <div class="content" style="padding: 20px">
+               <div class="form-group">
+                   @Html.TextBoxFor(x => x.RoleName, htmlAttributes: new
+                   {
+                       @class = "form-control", placeholder =
+                           "Role Name"
+                   })
+               </div>
+               <div class="form-group">
+                   @Html.TextBoxFor(x => x.RoleDescription, htmlAttributes: new { @class = "form-control", placeholder = "Role Description" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.IsSuperAdmin, htmlAttributes: new { @class = "form-control", placeholder = "Is Super Admin" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.DepartmentReadAccess, htmlAttributes: new { @class = "form-control", placeholder = "Department Read Access" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.DepartmentWriteAccess, htmlAttributes: new { @class = "form-control", placeholder = "Department Write Access" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.DoctorReadAccess, htmlAttributes: new { @class = "form-control", placeholder = "Doctor Read Access" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.DoctorWriteAccess, htmlAttributes: new { @class = "form-control", placeholder = "Doctor Write Access" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.InspectionReadAccess, htmlAttributes: new { @class = "form-control", placeholder = "Inspection Read Access" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.InspectionWriteAccess, htmlAttributes: new { @class = "form-control", placeholder = "Inspection Write Access" })
+               </div>
+       
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.PatientReadAccess, htmlAttributes: new { @class = "form-control", placeholder = "Patient Read Access" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.PatientWriteAccess, htmlAttributes: new { @class = "form-control", placeholder = "Patient Write Access" })
+               </div>
+       
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.MedicalOperationReadAccess, htmlAttributes: new { @class = "form-control", placeholder = "Medical Operation Read Access" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.MedicalOperationWriteAccess, htmlAttributes: new
+                   {
+                       @class = "form-control",
+                       placeholder = "Medical Operation Write Access"
+                   })
+               </div>
+       
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.MedicineItemReadAccess, htmlAttributes: new { @class = "form-control", placeholder = "MedicineItem Read Access" })
+               </div>
+               <div class="form-group">
+                   @Html.CheckBoxFor(x => x.MedicineItemWriteAccess, htmlAttributes: new
+                   {
+                       @class = "form-control",
+                       placeholder = "Medicine Item Write Access"
+                   })
+               </div>
+        <div style="float: right">
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </div>
+}
