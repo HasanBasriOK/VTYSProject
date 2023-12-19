@@ -26,19 +26,24 @@ namespace MiniHbys.Business.Services
 
         public List<Patient> GetAllPatients()
         {
-            return _patientManager.ListPatient();
+            return _patientManager.GetAllPatients();
         }
-		public bool UpdatePatient(Patient patient)
+		public void UpdatePatient(Patient patient)
 		{
-			return _patientManager.UpdatePatient(patient);
+			_patientManager.UpdatePatient(patient);
 		}
-		public List<Patient> DetailPatientByID(int id)
+		public Patient GetPatientById(int id)
 		{
-			return _patientManager.DetailPatient(id);
+			return _patientManager.GetPatientById(id);
 		}
-        public bool DeletePatient(int id)
+        public void DeletePatient(int id)
         {
-            return _patientManager.DeletePatient(id);
+	        var patient = _patientManager.GetPatientById(id);
+
+	        if (patient == null)
+		        throw new Exception("Couldnt find patient with department id :"+id);
+        
+	        _patientManager.DeletePatient(id);
         }
     }
 }

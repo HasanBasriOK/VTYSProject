@@ -9,4 +9,5 @@ public class User
     public string UserSurname { get; set; }
     public DateTime? BirthDate { get; set; }
     public int RoleID { get; set; }
+    public Role Role { get; set; }
 }

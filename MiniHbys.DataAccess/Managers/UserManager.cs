@@ -108,4 +108,86 @@ public class UserManager : IUserManager
             }
         }
     }
+
+    public List<User> GetAllUsers()
+    {
+        var users = new List<User>();
+        using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
+        {
+            connection.Open();
+            var commandText = @"SELECT * FROM User";
+            using (var command = new SqlCommand(commandText,connection))
+            {
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    var user = new User();
+                    user.Password = reader["Password"] != DBNull.Value ? reader["Password"].ToString() : string.Empty;
+                    user.BirthDate = reader["BirthDate"] != DBNull.Value
+                        ? reader["BirthDate"].ToDateTime()
+                        : DateTime.MinValue;
+                    user.UserEmail = reader["UserEmail"] !=DBNull.Value ? reader["UserEmail"].ToString():string.Empty;
+                    user.UserName = reader["UserName"] != DBNull.Value ? reader["UserName"].ToString() : string.Empty;
+                    user.UserSurname = reader["UserSurname"] != DBNull.Value
+                        ? reader["UserSurname"].ToString()
+                        : string.Empty;
+                    user.RoleID = reader["RoleID"] != DBNull.Value ? reader["RoleID"].ToInt32() : default;
+                    user.UserID = reader["UserID"] != DBNull.Value ? reader["UserID"].ToInt32() : default;
+                    user.Role = new RoleManager().GetRoleById(user.RoleID);
+                    users.Add(user);
+                }
+            }
+        }
+        return users;
+    }
+
+    public User GetUserById(int userId)
+    {
+        User user = null;
+        using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
+        {
+            connection.Open();
+            var commandText = @"SELECT * FROM User WHERE UserID = @UserID";
+            using (var command = new SqlCommand(commandText,connection))
+            {
+                command.Parameters.AddWithValue("UserID", userId);
+                var reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    user = new User();
+                    user.Password = reader["Password"] != DBNull.Value ? reader["Password"].ToString() : string.Empty;
+                    user.BirthDate = reader["BirthDate"] != DBNull.Value
+                        ? reader["BirthDate"].ToDateTime()
+                        : DateTime.MinValue;
+                    user.UserEmail = reader["UserEmail"] !=DBNull.Value ? reader["UserEmail"].ToString():string.Empty;
+                    user.UserName = reader["UserName"] != DBNull.Value ? reader["UserName"].ToString() : string.Empty;
+                    user.UserSurname = reader["UserSurname"] != DBNull.Value
+                        ? reader["UserSurname"].ToString()
+                        : string.Empty;
+                    user.RoleID = reader["RoleID"] != DBNull.Value ? reader["RoleID"].ToInt32() : default;
+                    user.UserID = reader["UserID"] != DBNull.Value ? reader["UserID"].ToInt32() : default;
+                    user.Role = new RoleManager().GetRoleById(user.RoleID);
+                }
+            }
+        }
+
+        return user;
+    }
+
+    public void DeleteUser(int userId)
+    {
+        using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
+        {
+            connection.Open();
+            var commandText = @"DELETE FROM User WHERE UserID = @UserID";
+            using (var command = new SqlCommand(commandText,connection) )
+            {
+                command.Parameters.AddWithValue("@UserID", userId);
+                command.ExecuteNonQuery();
+            }
+        }
+    }
 }

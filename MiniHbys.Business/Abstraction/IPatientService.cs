@@ -11,8 +11,8 @@ namespace MiniHbys.Business.Abstraction
 	{
 		void CreatePatient(Patient patient);
 		List<Patient> GetAllPatients();
-		bool UpdatePatient(Patient patient);
-		List<Patient> DetailPatientByID(int id);
-		bool DeletePatient(int id);
+		void UpdatePatient(Patient patient);
+		Patient GetPatientById(int id);
+		void DeletePatient(int id);
     }
 }

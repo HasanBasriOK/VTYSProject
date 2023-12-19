@@ -37,5 +37,20 @@ public class UserService : IUserService
     {
         var encryptedPassword = EncyptionHelper.Encrypt(user.Password, AppConstants.EncryptionKey);
     }
+    
+    public List<User> GetAllUsers()
+    {
+        return _userManager.GetAllUsers();
+    }
+    
+    public User GetUserById(int userId)
+    {
+        return _userManager.GetUserById(userId);
+    }
+
+    public void DeleteUser(int userId)
+    {
+        _userManager.DeleteUser(userId);
+    }
 
 }
