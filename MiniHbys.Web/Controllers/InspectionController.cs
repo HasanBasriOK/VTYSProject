@@ -43,6 +43,12 @@ public class InspectionController : Controller
     [HttpPost]
     public IActionResult Edit(Inspection inspection)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _inspectionService.UpdateInspection(inspection);
         return RedirectToAction(actionName: "Index", controllerName: "Inspection");
     }
@@ -59,6 +65,16 @@ public class InspectionController : Controller
     [HttpPost]
     public IActionResult Create(Inspection inspection)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            var doctors = _doctorService.GetAllDoctors();
+            var patients = _patientService.GetAllPatients();
+            ViewBag.Doctors = doctors;
+            ViewBag.Patients = patients;
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _inspectionService.CreateInspection(inspection);
         return RedirectToAction(actionName: "Index", controllerName: "Inspection");
     }

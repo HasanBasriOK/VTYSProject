@@ -19,8 +19,8 @@ public class PatientManager : IPatientManager
                 command.Parameters.AddWithValue("@PatientName", patient.PatientName);
                 command.Parameters.AddWithValue("@PatientSurname", patient.PatientSurname);
                 command.Parameters.AddWithValue("@PatientGender", patient.PatientGender);
-                command.Parameters.AddWithValue("@PatientName", patient.BloodGroup);
-                command.Parameters.AddWithValue("@PatientName", patient.BirthDate);
+                command.Parameters.AddWithValue("@BloodGroup", patient.BloodGroup);
+                command.Parameters.AddWithValue("@BirthDate", patient.BirthDate);
                 command.ExecuteNonQuery();
             }
         }

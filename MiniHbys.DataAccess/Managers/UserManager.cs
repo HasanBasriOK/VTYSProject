@@ -57,6 +57,7 @@ public class UserManager : IUserManager
                     user.RoleID = reader["RoleID"] != DBNull.Value ? reader["RoleID"].ToInt32() : default;
                     user.BirthDate = reader["Birthdate"] != DBNull.Value ? reader["Birthdate"].ToDateTime() : null;
                     user.Password = reader["Password"] != DBNull.Value ? reader["Password"].ToString() : string.Empty;
+                    user.Role = new RoleManager().GetRoleById(user.RoleID);
                 }
             }
         }

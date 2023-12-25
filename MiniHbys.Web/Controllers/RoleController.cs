@@ -34,6 +34,12 @@ public class RoleController : Controller
     [HttpPost]
     public IActionResult Edit(Role role)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _roleService.UpdateRole(role);
         return RedirectToAction(actionName: "Index", controllerName: "Role");
     }
@@ -46,6 +52,12 @@ public class RoleController : Controller
     [HttpPost]
     public IActionResult Create(Role role)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _roleService.CreateRole(role);
         return RedirectToAction(actionName: "Index", controllerName: "Role");
     }

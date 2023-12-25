@@ -42,7 +42,7 @@ public class DoctorManager : IDoctorManager
                     doctor.DoctorName = reader["DoctorName"] != DBNull.Value
                         ? reader["DoctorName"].ToString()
                         : string.Empty;
-                    doctor.DoctorSurname = reader["DoctorSurnane"] != DBNull.Value
+                    doctor.DoctorSurname = reader["DoctorSurname"] != DBNull.Value
                         ? reader["DoctorSurname"].ToString
                             ()
                         : string.Empty;
@@ -50,6 +50,7 @@ public class DoctorManager : IDoctorManager
                         ? reader["DepartmentID"].ToInt32()
                         : default;
                     doctor.DoctorID = reader["DoctorID"].ToInt32();
+                    doctor.Department = new DepartmentManager().GetDepartmentById(doctor.DepartmentID);
                     doctors.Add(doctor);
                 }
             }
@@ -76,7 +77,7 @@ public class DoctorManager : IDoctorManager
                     doctor.DoctorName = reader["DoctorName"] != DBNull.Value
                         ? reader["DoctorName"].ToString()
                         : string.Empty;
-                    doctor.DoctorSurname = reader["DoctorSurnane"] != DBNull.Value
+                    doctor.DoctorSurname = reader["DoctorSurname"] != DBNull.Value
                         ? reader["DoctorSurname"].ToString
                             ()
                         : string.Empty;
@@ -84,6 +85,7 @@ public class DoctorManager : IDoctorManager
                         ? reader["DepartmentID"].ToInt32()
                         : default;
                     doctor.DoctorID = reader["DoctorID"].ToInt32();
+                    doctor.Department = new DepartmentManager().GetDepartmentById(doctor.DepartmentID);
                 }
             }
         }

@@ -112,3 +112,7 @@
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/obj/Debug/net7.0/ref/MiniHbys.Web.dll
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/bin/Debug/net7.0/MiniHbys.Common.dll
 /Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/bin/Debug/net7.0/MiniHbys.Common.pdb
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/bin/Debug/net7.0/JetBrains.Annotations.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/bin/Debug/net7.0/X.PagedList.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/bin/Debug/net7.0/X.PagedList.Mvc.Core.dll
+/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/obj/Debug/net7.0/MiniHbys.Web.MvcApplicationPartsAssemblyInfo.cs

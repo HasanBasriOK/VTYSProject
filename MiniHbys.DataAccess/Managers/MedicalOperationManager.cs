@@ -85,6 +85,8 @@ public class MedicalOperationManager : IMedicalOperationManager
                     medicalOperation.MedicalOperationID = reader["MedicalOperationID"] != DBNull.Value
                         ? reader["MedicalOperationID"].ToInt32()
                         : default;
+                    medicalOperation.Inspection =
+                        new InspectionManager().GetInspectionById(medicalOperation.InspectionID);
                 }
             }
         }
@@ -117,6 +119,8 @@ public class MedicalOperationManager : IMedicalOperationManager
                     medicalOperation.MedicalOperationID = reader["MedicalOperationID"] != DBNull.Value
                         ? reader["MedicalOperationID"].ToInt32()
                         : default;
+                    medicalOperation.Inspection =
+                        new InspectionManager().GetInspectionById(medicalOperation.InspectionID);
                     medicalOperations.Add(medicalOperation);
                 }
             }

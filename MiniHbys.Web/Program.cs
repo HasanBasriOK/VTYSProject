@@ -23,7 +23,10 @@ builder.Services.AddTransient<IRoleManager, RoleManager>();
 builder.Services.AddTransient<IRoleService, RoleService>();
 builder.Services.AddTransient<IInspectionManager, InspectionManager>();
 builder.Services.AddTransient<IInspectionService, InspectionService>();
+builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
 
+builder.Services.AddMemoryCache();
+builder.Services.AddSession();
 #endregion
 
 var app = builder.Build();
@@ -55,5 +58,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.UseSession();
 
 app.Run();

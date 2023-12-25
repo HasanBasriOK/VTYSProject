@@ -25,12 +25,36 @@ public class UserController : Controller
     public IActionResult Login(LoginViewModel model)
     {
         //Login Actions
+        var user = _userService.Login(model.Username, model.Password);
+        if (user == null)
+        {
+            ViewBag.Message = "Couldnt find user";
+            return View();
+        }
+        
+        HttpContext.Session.SetString("UserName",user.UserName);
+        HttpContext.Session.SetString("UserSurname",user.UserSurname);
+        HttpContext.Session.SetString("UserFullname",string.Format("{0} {1}",user.UserName,user.UserSurname));
+        HttpContext.Session.SetString("UserEmail",user.UserEmail);
+        HttpContext.Session.SetInt32("DepartmentReadAccess",user.Role.DepartmentReadAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("DepartmentWriteAccess",user.Role.DepartmentWriteAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("DoctorReadAccess",user.Role.DoctorReadAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("DoctorWriteAccess",user.Role.DoctorWriteAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("InspectionReadAccess",user.Role.InspectionReadAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("InspectionWriteAccess",user.Role.InspectionWriteAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("IsSuperAdmin",user.Role.IsSuperAdmin == true ? 1:0);
+        HttpContext.Session.SetInt32("PatientReadAccess",user.Role.PatientReadAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("PatientWriteAccess",user.Role.PatientWriteAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("MedicalOperationReadAccess",user.Role.MedicalOperationReadAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("MedicalOperationWriteAccess",user.Role.MedicalOperationWriteAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("MedicineItemReadAccess",user.Role.MedicineItemReadAccess == true ? 1:0);
+        HttpContext.Session.SetInt32("MedicineItemWriteAccess",user.Role.MedicineItemWriteAccess == true ? 1:0);
+        
         return RedirectToAction(actionName: "Index", controllerName: "Home");
     }
 
     public IActionResult Register()
     {
-        
         return View();
     }
 
@@ -64,6 +88,12 @@ public class UserController : Controller
     [HttpPost]
     public IActionResult Edit(User user)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _userService.UpdateUser(user);
         return RedirectToAction(actionName: "Index", controllerName: "User");
     }
@@ -78,6 +108,12 @@ public class UserController : Controller
     [HttpPost]
     public IActionResult Create(User user)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _userService.CreateUser(user);
         return RedirectToAction(actionName: "Index", controllerName: "User");
     }
