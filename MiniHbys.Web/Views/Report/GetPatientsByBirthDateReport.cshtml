@@ -1,0 +1,37 @@
+@model System.Collections.Generic.List<MiniHbys.Entity.Patient>
+
+@{
+    ViewBag.Title = "Patients By Birth Date";
+    Layout = "_Layout";
+}
+
+<table class="table">
+    <tr>
+        <th>Patient Name</th>
+        <th>Patient Surname</th>
+        <th>Patient Gender</th>
+        <th>Patient BirthDate</th>
+        <th>Patient Blood Group</th>
+    </tr>
+
+    @foreach (var patient in Model)
+    {
+        <tr>
+            <td>
+                @patient.PatientName
+            </td>
+            <td>
+                @patient.PatientSurname
+            </td>
+            <td>
+                @patient.PatientGender
+            </td>
+            <td>
+                @patient.BirthDate
+            </td>
+            <td>
+                @patient.BloodGroup
+            </td>
+        </tr>
+    }
+</table>

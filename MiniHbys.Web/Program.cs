@@ -24,6 +24,14 @@ builder.Services.AddTransient<IRoleService, RoleService>();
 builder.Services.AddTransient<IInspectionManager, InspectionManager>();
 builder.Services.AddTransient<IInspectionService, InspectionService>();
 builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddTransient<IReportManager, ReportManager>();
+builder.Services.AddTransient<IReportService, ReportService>();
+builder.Services.AddTransient<ISystemManager, SystemManager>();
+builder.Services.AddTransient<ISystemService, SystemService>();
+builder.Services.AddTransient<IMedicalOperationManager, MedicalOperationManager>();
+builder.Services.AddTransient<IMedicalOperationService, MedicalOperationService>();
+builder.Services.AddTransient<IMedicineItemManager, MedicineItemManager>();
+builder.Services.AddTransient<IMedicineItemService, MedicineItemService>();
 
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();
