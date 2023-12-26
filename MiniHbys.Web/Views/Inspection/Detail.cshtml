@@ -11,13 +11,13 @@
             <strong>Doctor</strong>
         </label>
     </div>
-    <label>@string.Format("{0} {1}", Model.Doctor.DoctorName, Model.Doctor.DoctorSurname) </label>
+    <label>@string.Format("{0} {1}", Model.Doctor?.DoctorName, Model.Doctor?.DoctorSurname) </label>
     <div class="form-group">
         <label style="font-size: 22px">
             <strong>Patient</strong>
         </label>
     </div>
-    <label>@string.Format("{0} {1}", Model.Patient.PatientName, Model.Patient.PatientSurname)</label>
+    <label>@string.Format("{0} {1}", Model.Patient?.PatientName, Model.Patient?.PatientSurname)</label>
     <div class="form-group">
         <label style="font-size: 22px">
             <strong>Inspection Date</strong>

@@ -120,6 +120,50 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetInspectionsByDate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldEluc3BlY3Rpb25zQnlEYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetInspectionsByDateReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldEluc3BlY3Rpb25zQnlEYXRlUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetInspectionsByDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldEluc3BlY3Rpb25zQnlEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetInspectionsByDoctorReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldEluc3BlY3Rpb25zQnlEb2N0b3JSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetInspectionsByPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldEluc3BlY3Rpb25zQnlQYXRpZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetInspectionsByPatientReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldEluc3BlY3Rpb25zQnlQYXRpZW50UmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetMedicineItemsByPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldE1lZGljaW5lSXRlbXNCeVBhdGllbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetMedicineItemsByPatientReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldE1lZGljaW5lSXRlbXNCeVBhdGllbnRSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetPatientsByBirthDate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldFBhdGllbnRzQnlCaXJ0aERhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/GetPatientsByBirthDateReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0dldFBhdGllbnRzQnlCaXJ0aERhdGVSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Role/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

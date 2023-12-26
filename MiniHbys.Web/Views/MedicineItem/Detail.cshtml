@@ -17,13 +17,13 @@
             <strong>Patient</strong>
         </label>
     </div>
-    <label>@string.Format("{0} {1}",Model.Patient.PatientName,Model.Patient.PatientSurname)</label>
+    <label>@string.Format("{0} {1}",Model.Patient?.PatientName,Model.Patient?.PatientSurname)</label>
     <div class="form-group">
         <label style="font-size: 22px">
             <strong>Inspection Date</strong>
         </label>
     </div>
-    <label>@Model.Inspection.InspectionDate.Value.ToShortDateString()</label>
+    <label>@Model.Inspection?.InspectionDate?.ToShortDateString()</label>
 </div>
 
 <div style="padding-top: 5%">

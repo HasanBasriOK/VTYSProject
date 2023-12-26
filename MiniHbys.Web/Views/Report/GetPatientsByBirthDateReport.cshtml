@@ -35,3 +35,7 @@
         </tr>
     }
 </table>
+<div style="padding: 10%">
+    @Html.ActionLink(linkText:"Export",actionName:"ExportReport",controllerName:"Report",routeValues:new {reportName = "PatientsByBirthDateReport"},
+    htmlAttributes:new { @class="btn btn-success"})
+</div>
