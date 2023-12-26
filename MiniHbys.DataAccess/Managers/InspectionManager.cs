@@ -90,6 +90,8 @@ public class InspectionManager:IInspectionManager
                     default;
                     inspection.PatientID =
                         reader["PatientID"] != DBNull.Value ? reader["PatientID"].ToInt32() : default;
+                    inspection.Doctor = new DoctorManager().GetDoctorById(inspection.DoctorID);
+                    inspection.Patient = new PatientManager().GetPatientById(inspection.PatientID);
                 }
             }
         }
@@ -122,6 +124,8 @@ public class InspectionManager:IInspectionManager
                         default;
                     inspection.PatientID =
                         reader["PatientID"] != DBNull.Value ? reader["PatientID"].ToInt32() : default;
+                    inspection.Doctor = new DoctorManager().GetDoctorById(inspection.DoctorID);
+                    inspection.Patient = new PatientManager().GetPatientById(inspection.PatientID);
                     inspections.Add(inspection);
                 }
             }

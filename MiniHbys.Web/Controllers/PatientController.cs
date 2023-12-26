@@ -34,6 +34,12 @@ public class PatientController : Controller
     [HttpPost]
     public IActionResult Edit(Patient patient)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _patientService.UpdatePatient(patient);
         return RedirectToAction(actionName: "Index", controllerName: "Patient");
     }
@@ -46,6 +52,12 @@ public class PatientController : Controller
     [HttpPost]
     public IActionResult Create(Patient patient)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _patientService.CreatePatient(patient);
         return RedirectToAction(actionName: "Index", controllerName: "Patient");
     }

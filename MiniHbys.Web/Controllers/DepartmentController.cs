@@ -32,6 +32,12 @@ public class DepartmentController : Controller
     [HttpPost]
     public IActionResult Edit(Department department)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _departmentService.UpdateDepartment(department);
         return RedirectToAction(actionName: "Index", controllerName: "Department");
     }
@@ -44,6 +50,12 @@ public class DepartmentController : Controller
     [HttpPost]
     public IActionResult Create(Department department)
     {
+        var modelState = ModelState.IsValid;
+        if (!modelState)
+        {
+            ViewBag.Message = "Please fill all fields";
+            return View();
+        }
         _departmentService.CreateDepartment(department);
         return RedirectToAction(actionName: "Index", controllerName: "Department");
     }

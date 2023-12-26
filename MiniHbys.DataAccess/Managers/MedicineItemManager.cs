@@ -83,6 +83,8 @@ public class MedicineItemManager:IMedicineItemManager
                         : default;
                     item.PatientID = reader["PatientID"] != DBNull.Value ? reader["PatientID"].ToInt32() : default;
                     item.MedicineItemID = reader["MedicineItemID"].ToInt32();
+                    item.Inspection = new InspectionManager().GetInspectionById(item.InspectionID);
+                    item.Patient = new PatientManager().GetPatientById(item.PatientID);
                 }
             }
         }
@@ -111,6 +113,8 @@ public class MedicineItemManager:IMedicineItemManager
                         : default;
                     item.PatientID = reader["PatientID"] != DBNull.Value ? reader["PatientID"].ToInt32() : default;
                     item.MedicineItemID = reader["MedicineItemID"].ToInt32();
+                    item.Inspection = new InspectionManager().GetInspectionById(item.InspectionID);
+                    item.Patient = new PatientManager().GetPatientById(item.PatientID);
                     medicineItems.Add(item);
                 }
             }

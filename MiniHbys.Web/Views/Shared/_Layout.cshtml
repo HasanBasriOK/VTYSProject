@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -48,38 +51,113 @@
             <!-- Sidebar Menu -->
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                    <li class="nav-item">
-                        <a href="pages/gallery.html" class="nav-link active" >
-                            <i class="nav-icon far fa-image"></i>
-                            <p>
-                                Hasta
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pages/gallery.html" class="nav-link">
-                            <i class="nav-icon far fa-image"></i>
-                            <p>
-                                Doktor
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pages/gallery.html" class="nav-link">
-                            <i class="nav-icon far fa-image"></i>
-                            <p>
-                                Muayene
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pages/gallery.html" class="nav-link">
-                            <i class="nav-icon far fa-image"></i>
-                            <p>
-                                Ameliyat
-                            </p>
-                        </a>
-                    </li>
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("PatientReadAccess") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="Patient/Index" class="nav-link active">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Patient
+                                </p>
+                            </a>
+                        </li>
+                    }
+                    
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("DoctorReadAccess") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="Doctor/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Doctor
+                                </p>
+                            </a>
+                        </li>
+                    }
+                  
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("InspectionReadAccess") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="Inspection/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Inspection
+                                </p>
+                            </a>
+                        </li>
+                    }
+                    
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("MedicalOperationReadAccess") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="MedicalOperation/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Medical Operation
+                                </p>
+                            </a>
+                        </li>
+                    }
+                    
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("MedicineItemReadAccess") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="MedicineItem/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    MedicineItem
+                                </p>
+                            </a>
+                        </li>
+                    }
+                   
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("DepartmentReadAccess") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="Department/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Department
+                                </p>
+                            </a>
+                        </li>
+                    }
+                   
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                    {
+                        <li class="nav-item">
+                            <a href="User/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    User
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Role/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Role
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="System/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    System Management
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Report/Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Reports
+                                </p>
+                            </a>
+                        </li>
+                    }
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->

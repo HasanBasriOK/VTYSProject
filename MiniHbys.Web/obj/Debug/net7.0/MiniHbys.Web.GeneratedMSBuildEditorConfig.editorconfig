@@ -32,6 +32,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVwYXJ0bWVudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Doctor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Doctor/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yL0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Doctor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Doctor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9jdG9yL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,20 +56,84 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Patient/CreatePatient.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudC9DcmVhdGVQYXRpZW50LmNzaHRtbA==
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Inspection/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5zcGVjdGlvbi9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Inspection/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5zcGVjdGlvbi9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Inspection/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5zcGVjdGlvbi9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Inspection/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5zcGVjdGlvbi9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/MedicalOperation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVkaWNhbE9wZXJhdGlvbi9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/MedicalOperation/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVkaWNhbE9wZXJhdGlvbi9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/MedicalOperation/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVkaWNhbE9wZXJhdGlvbi9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/MedicalOperation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVkaWNhbE9wZXJhdGlvbi9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/MedicineItem/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVkaWNpbmVJdGVtL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/MedicineItem/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVkaWNpbmVJdGVtL0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/MedicineItem/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVkaWNpbmVJdGVtL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/MedicineItem/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVkaWNpbmVJdGVtL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Patient/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Patient/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudC9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Patient/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudC9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Patient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Patient/ListPatient.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudC9MaXN0UGF0aWVudC5jc2h0bWw=
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Role/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Patient/UpdatePatient.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGF0aWVudC9VcGRhdGVQYXRpZW50LmNzaHRtbA==
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Role/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Role/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Shared/Error.cshtml]
@@ -62,6 +142,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/System/CreateBackup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3lzdGVtL0NyZWF0ZUJhY2t1cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/System/RestoreDatabase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3lzdGVtL1Jlc3RvcmVEYXRhYmFzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/User/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/hasanok/Documents/GitHub/VTYSProject/MiniHbys.Web/Views/User/Login.cshtml]

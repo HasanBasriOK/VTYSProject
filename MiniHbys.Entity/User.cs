@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace MiniHbys.Entity;
 
 public class User
 {
+    [Key]
     public int UserID { get; set; }
     public string UserEmail { get; set; }
     public string Password { get; set; }
@@ -9,5 +12,5 @@ public class User
     public string UserSurname { get; set; }
     public DateTime? BirthDate { get; set; }
     public int RoleID { get; set; }
-    public Role Role { get; set; }
+    public virtual Role? Role { get; set; }
 }
