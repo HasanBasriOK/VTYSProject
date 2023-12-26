@@ -22,10 +22,10 @@
     {
         <tr>
             <td>
-                @string.Format("{0} {1}",inspection.Patient.PatientName,inspection.Patient.PatientSurname)  
+                @string.Format("{0} {1}",inspection.Patient?.PatientName,inspection.Patient?.PatientSurname)  
             </td>
             <td>
-                @string.Format("{0} {1}",inspection.Doctor.DoctorName,inspection.Doctor.DoctorSurname) 
+                @string.Format("{0} {1}",inspection.Doctor?.DoctorName,inspection.Doctor?.DoctorSurname) 
             </td>
             <td>
                 @inspection.InspectionDate

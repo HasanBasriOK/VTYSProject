@@ -19,11 +19,15 @@
                 @medicineItem.MedicineName
             </td>
             <td>
-                @string.Format("{0} {1}",medicineItem.Patient.PatientName,medicineItem.Patient.PatientSurname) 
+                @string.Format("{0} {1}",medicineItem.Patient?.PatientName,medicineItem.Patient?.PatientSurname) 
             </td>
             <td>
-                @medicineItem.Inspection.InspectionDate.Value.ToShortDateString()
+                @medicineItem.Inspection?.InspectionDate?.ToShortDateString()
             </td>
         </tr>
     }
 </table>
+<div style="padding: 10%">
+    @Html.ActionLink(linkText:"Export",actionName:"ExportReport",controllerName:"Report",routeValues:new {reportName = "MedicineItemsByPatientReport"},
+    htmlAttributes:new { @class="btn btn-success"})
+</div>
