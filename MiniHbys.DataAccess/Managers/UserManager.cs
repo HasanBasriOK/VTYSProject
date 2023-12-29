@@ -12,7 +12,7 @@ public class UserManager : IUserManager
         using(var connection = new SqlConnection(GlobalSettings.ConnectionString))
         {
             connection.Open();
-            var commandText = @"INSERT INTO User (UserEmail,Password,UserName,UserSurname,BirthDate,RoleID) VALUES
+            var commandText = @"INSERT INTO [User] (UserEmail,Password,UserName,UserSurname,BirthDate,RoleID) VALUES
         (@UserEmail,@Password,@UserName,@UserSurname,@BirthDate,@RoleID)";
             using (var command = new SqlCommand(commandText, connection))
             {
@@ -34,7 +34,7 @@ public class UserManager : IUserManager
         using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
         {
             connection.Open();
-            var commandString = @"SELECT * FROM User WHERE Email = @Username AND Password = @Password";
+            var commandString = @"SELECT * FROM [User] WHERE UserEmail = @Username AND Password = @Password";
             using (var command = new SqlCommand(commandString,connection))
             {
                 command.Parameters.AddWithValue("@Username", username);
@@ -69,7 +69,7 @@ public class UserManager : IUserManager
         using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
         {
             connection.Open();
-            var commandText = @"SELECT * FROM User WHERE Email = @Username";
+            var commandText = @"SELECT * FROM [User] WHERE Email = @Username";
             using (var command=new SqlCommand(commandText,connection))
             {
                 command.Parameters.AddWithValue("@UserEmail", email);
@@ -87,7 +87,7 @@ public class UserManager : IUserManager
         using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
         {
             connection.Open();
-            var commandText = @"UPDATE User SET 
+            var commandText = @"UPDATE [User] SET 
                 UserEmail = @UserEmail,
                 Password  = @Password,
                 UserName  = @UserName,
@@ -116,7 +116,7 @@ public class UserManager : IUserManager
         using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
         {
             connection.Open();
-            var commandText = @"SELECT * FROM User";
+            var commandText = @"SELECT * FROM [User]";
             using (var command = new SqlCommand(commandText,connection))
             {
                 var reader = command.ExecuteReader();
@@ -149,7 +149,7 @@ public class UserManager : IUserManager
         using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
         {
             connection.Open();
-            var commandText = @"SELECT * FROM User WHERE UserID = @UserID";
+            var commandText = @"SELECT * FROM [User] WHERE UserID = @UserID";
             using (var command = new SqlCommand(commandText,connection))
             {
                 command.Parameters.AddWithValue("UserID", userId);
@@ -183,7 +183,7 @@ public class UserManager : IUserManager
         using (var connection = new SqlConnection(GlobalSettings.ConnectionString))
         {
             connection.Open();
-            var commandText = @"DELETE FROM User WHERE UserID = @UserID";
+            var commandText = @"DELETE FROM [User] WHERE UserID = @UserID";
             using (var command = new SqlCommand(commandText,connection) )
             {
                 command.Parameters.AddWithValue("@UserID", userId);

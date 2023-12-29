@@ -20,15 +20,16 @@
 
     foreach (var patient in patients)
     {
-        doctorsSelectListItems.Add(new SelectListItem(text: patient.PatientName + " " + patient.PatientSurname, value: patient.PatientID
+        patientsSelectListItems.Add(new SelectListItem(text: patient.PatientName + " " + patient.PatientSurname, value: patient.PatientID
             .ToString()));
     }
 }
 
 @using (Html.BeginForm(actionName: "Edit", controllerName: "Inspection", routeValues: null, method: FormMethod.Post))
 {
-    @Html.HiddenFor(x => x.DoctorID)
+    @Html.HiddenFor(x => x.InspectionID)
     <div class="content" style="padding: 20px">
+        <strong>Doctor</strong>
         <div class="form-group">
             @Html.DropDownListFor(x => x.DoctorID, doctorsSelectListItems, htmlAttributes: new
             {
@@ -36,6 +37,7 @@
                     "Doctor"
             })
         </div>
+        <strong>Patient</strong>
         <div class="form-group">
             @Html.DropDownListFor(x => x.PatientID, patientsSelectListItems, htmlAttributes: new
             {

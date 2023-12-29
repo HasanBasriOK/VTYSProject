@@ -28,6 +28,7 @@
 @using (Html.BeginForm(actionName: "Create", controllerName: "Inspection", routeValues: null, method: FormMethod.Post))
 {
     <div style="padding: 20px">
+        <strong>Doctor</strong>
         <div class="form-group">
             @Html.DropDownListFor(x => x.DoctorID, doctorsSelectListItems, htmlAttributes: new
             {
@@ -35,6 +36,7 @@
                     "Doctor"
             })
         </div>
+        <strong>Patient</strong>
         <div class="form-group">
             @Html.DropDownListFor(x => x.PatientID, patientsSelectListItems, htmlAttributes: new
             {

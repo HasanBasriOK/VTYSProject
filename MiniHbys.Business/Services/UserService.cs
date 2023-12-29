@@ -24,7 +24,7 @@ public class UserService : IUserService
     public User Login(string email, string password)
     {
         var encryptedPassword = EncyptionHelper.Encrypt(password, AppConstants.EncryptionKey);
-        var user = _userManager.Login(email, password);
+        var user = _userManager.Login(email, encryptedPassword);
         return user;
     }
 
@@ -36,6 +36,8 @@ public class UserService : IUserService
     public void UpdateUser(User user)
     {
         var encryptedPassword = EncyptionHelper.Encrypt(user.Password, AppConstants.EncryptionKey);
+        user.Password = encryptedPassword;
+        _userManager.UpdateUser(user);
     }
     
     public List<User> GetAllUsers()

@@ -26,6 +26,7 @@
         <div class="form-group">
             @Html.TextBoxFor(x => x.DoctorSurname, htmlAttributes: new { @class = "form-control", placeholder = "Doctor Surname" })
         </div>
+        <strong>Department</strong>
         <div class="form-group">
             @Html.DropDownListFor(x => x.DepartmentID, departmentSelectListItems, htmlAttributes: new { @class = "form-control",
              placeholder = "Department" })

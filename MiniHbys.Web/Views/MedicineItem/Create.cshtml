@@ -37,6 +37,7 @@
                     "Medicine Name"
             })
         </div>
+        <strong>Inspection(Date-Doctor Name)</strong>
         <div class="form-group">
             @Html.DropDownListFor(x => x.InspectionID, inspectionSelectListItems, htmlAttributes: new
             {
@@ -44,6 +45,7 @@
                 placeholder = "Inspection"
             })
         </div>
+        <strong>Patient</strong>
         <div class="form-group">
             @Html.DropDownListFor(x => x.PatientID, patientSelectListItems, htmlAttributes: new
             {

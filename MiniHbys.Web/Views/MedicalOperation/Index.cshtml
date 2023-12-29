@@ -1,4 +1,5 @@
 @model System.Collections.Generic.List<MiniHbys.Entity.MedicalOperation>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
 @{
     ViewBag.Title = "Medical Operations";
@@ -25,12 +26,15 @@
                 @medicalOperation.Notes
             </td>
             <td>
-                @Html.ActionLink("Detail", actionName: "Detail", controllerName: "MedicalOperation", new { id = medicalOperation.MedicalOperationID },
-                    htmlAttributes: new { @class = "btn btn-primary" })
-                @Html.ActionLink("Edit", actionName: "Edit", controllerName: "MedicalOperation", new { id = medicalOperation.MedicalOperationID },
-                    htmlAttributes: new { @class = "btn btn-info" })
-                @Html.ActionLink("Delete", actionName: "Delete", controllerName: "MedicalOperation", new { id = medicalOperation.MedicalOperationID },
-                    htmlAttributes: new { @class = "btn btn-danger" })
+                @if (HttpContextAccessor.HttpContext.Session.GetInt32("MedicalOperationWriteAccess") == 1 || HttpContextAccessor.HttpContext.Session.GetInt32("IsSuperAdmin") == 1)
+                {
+                    @Html.ActionLink("Detail", actionName: "Detail", controllerName: "MedicalOperation", new { id = medicalOperation.MedicalOperationID },
+                        htmlAttributes: new { @class = "btn btn-primary action-button" })
+                    @Html.ActionLink("Edit", actionName: "Edit", controllerName: "MedicalOperation", new { id = medicalOperation.MedicalOperationID },
+                        htmlAttributes: new { @class = "btn btn-info action-button" })
+                    @Html.ActionLink("Delete", actionName: "Delete", controllerName: "MedicalOperation", new { id = medicalOperation.MedicalOperationID },
+                        htmlAttributes: new { @class = "btn btn-danger action-button" })
+                }
             </td>
         </tr>
     }
