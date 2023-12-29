@@ -32,6 +32,7 @@ public class UserController : Controller
             return View();
         }
         
+        HttpContext.Session.SetInt32("UserId",user.UserID);
         HttpContext.Session.SetString("UserName",user.UserName);
         HttpContext.Session.SetString("UserSurname",user.UserSurname);
         HttpContext.Session.SetString("UserFullname",string.Format("{0} {1}",user.UserName,user.UserSurname));
@@ -95,6 +96,29 @@ public class UserController : Controller
             return View();
         }
         _userService.UpdateUser(user);
+
+        #region Refresh Session With New Role Informations
+
+        var currentUser = _userService.GetUserById(user.UserID);
+
+        if (currentUser != null)
+        {
+            HttpContext.Session.SetInt32("DepartmentReadAccess",currentUser.Role.DepartmentReadAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("DepartmentWriteAccess",currentUser.Role.DepartmentWriteAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("DoctorReadAccess",currentUser.Role.DoctorReadAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("DoctorWriteAccess",currentUser.Role.DoctorWriteAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("InspectionReadAccess",currentUser.Role.InspectionReadAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("InspectionWriteAccess",currentUser.Role.InspectionWriteAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("IsSuperAdmin",currentUser.Role.IsSuperAdmin == true ? 1:0);
+            HttpContext.Session.SetInt32("PatientReadAccess",currentUser.Role.PatientReadAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("PatientWriteAccess",currentUser.Role.PatientWriteAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("MedicalOperationReadAccess",currentUser.Role.MedicalOperationReadAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("MedicalOperationWriteAccess",currentUser.Role.MedicalOperationWriteAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("MedicineItemReadAccess",currentUser.Role.MedicineItemReadAccess == true ? 1:0);
+            HttpContext.Session.SetInt32("MedicineItemWriteAccess",currentUser.Role.MedicineItemWriteAccess == true ? 1:0);
+        }
+        #endregion
+        
         return RedirectToAction(actionName: "Index", controllerName: "User");
     }
 

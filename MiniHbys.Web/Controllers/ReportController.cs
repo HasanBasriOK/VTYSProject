@@ -144,31 +144,80 @@ public class ReportController : Controller
                 Utilities.ExportData.ExportCsv(patientsByBirtDate, fileName);
                 break;
             case "MedicineItemsByPatientReport":
-                var medicineItemByPatients = System.Text.Json.JsonSerializer.Deserialize<List<Patient>>(reportJson);
+                var medicineItemByPatients = System.Text.Json.JsonSerializer.Deserialize<List<MedicineItem>>(reportJson);
+                var medicineItemReportItems = GetReportItemListForMedicineItem(medicineItemByPatients);
                 fileName =
                     $"MedicineItemsByPatientReport_{DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day}-{DateTime.Now.Hour}-{DateTime.Now.Minute}-{DateTime.Now.Second}-{DateTime.Now.Millisecond}";
-                Utilities.ExportData.ExportCsv(medicineItemByPatients, fileName);
+                Utilities.ExportData.ExportCsv(medicineItemReportItems, fileName);
                 break;
             case "InspectionsByPatientReport":
-                var inspectionsByPatient = System.Text.Json.JsonSerializer.Deserialize<List<Patient>>(reportJson);
+                var inspectionsByPatient = System.Text.Json.JsonSerializer.Deserialize<List<Inspection>>(reportJson);
+                var inspectionsByPatientReportItems = GetReportItemListForInspection(inspectionsByPatient);
                 fileName =
                     $"InspectionsByPatientReport_{DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day}-{DateTime.Now.Hour}-{DateTime.Now.Minute}-{DateTime.Now.Second}-{DateTime.Now.Millisecond}";
-                Utilities.ExportData.ExportCsv(inspectionsByPatient, fileName);
+                Utilities.ExportData.ExportCsv(inspectionsByPatientReportItems, fileName);
                 break;
             case "InspectionsByDoctorReport":
-                var inspectionsByDoctor = System.Text.Json.JsonSerializer.Deserialize<List<Patient>>(reportJson);
+                var inspectionsByDoctor = System.Text.Json.JsonSerializer.Deserialize<List<Inspection>>(reportJson);
+                var inspectionsByDoctorReportItems = GetReportItemListForInspection(inspectionsByDoctor);
                 fileName =
                     $"InspectionsByDoctorReport_{DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day}-{DateTime.Now.Hour}-{DateTime.Now.Minute}-{DateTime.Now.Second}-{DateTime.Now.Millisecond}";
-                Utilities.ExportData.ExportCsv(inspectionsByDoctor, fileName);
+                Utilities.ExportData.ExportCsv(inspectionsByDoctorReportItems, fileName);
                 break;
             case "InspectionsByDateReport":
-                var inspectionsByDate = System.Text.Json.JsonSerializer.Deserialize<List<Patient>>(reportJson);
+                var inspectionsByDate = System.Text.Json.JsonSerializer.Deserialize<List<Inspection>>(reportJson);
+                var inspectionsByDateReportItems = GetReportItemListForInspection(inspectionsByDate);
                 fileName =
                     $"InspectionsByDateReport_{DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day}-{DateTime.Now.Hour}-{DateTime.Now.Minute}-{DateTime.Now.Second}-{DateTime.Now.Millisecond}";
-                Utilities.ExportData.ExportCsv(inspectionsByDate, fileName);
+                Utilities.ExportData.ExportCsv(inspectionsByDateReportItems, fileName);
                 break;
         }
 
         return RedirectToAction("Index");
+    }
+
+    [NonAction]
+    private List<InspectionReportItem> GetReportItemListForInspection(List<Inspection> inspections)
+    {
+        var inspectionReportItems = new List<InspectionReportItem>();
+
+        foreach (var inspection in inspections)
+        {
+            var reportItem = new InspectionReportItem();
+            var doctorFullName = string.Format("{0} {1}",inspection.Doctor?.DoctorName ?? string.Empty ,
+                inspection.Doctor?.DoctorSurname ?? string.Empty);
+            var patientFullName = string.Format("{0} {1}",inspection.Patient?.PatientName ?? string.Empty ,
+                inspection.Patient?.PatientSurname ?? string.Empty);
+            reportItem.DoctorName = doctorFullName;
+            reportItem.InspectionDate = inspection.InspectionDate ?? DateTime.MinValue;
+            reportItem.InspectionResult = inspection.InspectionResult;
+            reportItem.PatientName = patientFullName;
+            
+            inspectionReportItems.Add(reportItem);
+        }
+
+        return inspectionReportItems;
+    }
+
+    [NonAction]
+    private List<MedicineItemReportItem> GetReportItemListForMedicineItem(List<MedicineItem> medicineItems)
+    {
+        var medicineItemReportItems = new List<MedicineItemReportItem>();
+        foreach (var item in medicineItems)
+        {
+            var reportItem = new MedicineItemReportItem();
+            var doctorFullName = string.Format("{0} {1}",item.Inspection?.Doctor?.DoctorName ?? string.Empty ,
+                item.Inspection?.Doctor?.DoctorSurname ?? string.Empty);
+            var patientFullName = string.Format("{0} {1}",item.Inspection?.Patient?.PatientName ?? string.Empty ,
+                item.Inspection?.Patient?.PatientSurname ?? string.Empty);
+
+            reportItem.DoctorName = doctorFullName;
+            reportItem.InspectionDate = item.Inspection?.InspectionDate ?? DateTime.MinValue;
+            reportItem.MedicineName = item.MedicineName;
+            reportItem.PatientName = patientFullName;
+            medicineItemReportItems.Add(reportItem);
+        }
+
+        return medicineItemReportItems;
     }
 }

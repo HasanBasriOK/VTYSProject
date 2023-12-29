@@ -32,11 +32,11 @@
             </td>
             <td>
                 @Html.ActionLink("Detail", actionName: "Detail", controllerName: "Role", new { id = role.RoleID },
-                    htmlAttributes: new { @class = "btn btn-primary" })
+                    htmlAttributes: new { @class = "btn btn-primary action-button" })
                 @Html.ActionLink("Edit", actionName: "Edit", controllerName: "Role", new { id = role.RoleID },
-                    htmlAttributes: new { @class = "btn btn-info" })
+                    htmlAttributes: new { @class = "btn btn-info action-button" })
                 @Html.ActionLink("Delete", actionName: "Delete", controllerName: "Role", new { id = role.RoleID },
-                    htmlAttributes: new { @class = "btn btn-danger" })
+                    htmlAttributes: new { @class = "btn btn-danger action-button" })
             </td>
         </tr>
     }

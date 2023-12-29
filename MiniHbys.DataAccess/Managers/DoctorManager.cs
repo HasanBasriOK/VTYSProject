@@ -101,6 +101,7 @@ public class DoctorManager : IDoctorManager
             var commandText = @"DELETE FROM Doctor WHERE DoctorID = @DoctorID";
             using (var command = new SqlCommand(commandText,connection))
             {
+                command.Parameters.AddWithValue("@DoctorID", doctorId);
                 command.ExecuteNonQuery();
             }
         }
